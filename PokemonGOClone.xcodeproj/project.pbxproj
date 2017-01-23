@@ -56,6 +56,8 @@
 		BEFE1C4D1E3584B900602CDF /* PokemonGOClone */ = {
 			isa = PBXGroup;
 			children = (
+				BEFE1C641E3593DF00602CDF /* Modules */,
+				BEFE1C631E3593D700602CDF /* ViewControllers */,
 				BEFE1C4E1E3584B900602CDF /* AppDelegate.swift */,
 				BEFE1C501E3584B900602CDF /* ViewController.swift */,
 				BEFE1C521E3584B900602CDF /* Main.storyboard */,
@@ -65,6 +67,20 @@
 				BEFE1C551E3584B900602CDF /* PokemonGOClone.xcdatamodeld */,
 			);
 			path = PokemonGOClone;
+			sourceTree = "<group>";
+		};
+		BEFE1C631E3593D700602CDF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BEFE1C641E3593DF00602CDF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
