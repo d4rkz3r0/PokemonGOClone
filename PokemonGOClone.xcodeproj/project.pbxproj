@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		BEFE1C4F1E3584B900602CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFE1C4E1E3584B900602CDF /* AppDelegate.swift */; };
-		BEFE1C511E3584B900602CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFE1C501E3584B900602CDF /* ViewController.swift */; };
+		BEFE1C511E3584B900602CDF /* ShowMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFE1C501E3584B900602CDF /* ShowMapViewController.swift */; };
 		BEFE1C541E3584B900602CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE1C521E3584B900602CDF /* Main.storyboard */; };
 		BEFE1C571E3584B900602CDF /* PokemonGOClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEFE1C551E3584B900602CDF /* PokemonGOClone.xcdatamodeld */; };
 		BEFE1C591E3584B900602CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFE1C581E3584B900602CDF /* Assets.xcassets */; };
 		BEFE1C5C1E3584B900602CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE1C5A1E3584B900602CDF /* LaunchScreen.storyboard */; };
+		BEFE1C671E359A5B00602CDF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFE1C661E359A5B00602CDF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEFE1C4B1E3584B900602CDF /* PokemonGOClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonGOClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE1C4E1E3584B900602CDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BEFE1C501E3584B900602CDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEFE1C501E3584B900602CDF /* ShowMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMapViewController.swift; sourceTree = "<group>"; };
 		BEFE1C531E3584B900602CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEFE1C561E3584B900602CDF /* PokemonGOClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PokemonGOClone.xcdatamodel; sourceTree = "<group>"; };
 		BEFE1C581E3584B900602CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEFE1C5B1E3584B900602CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEFE1C5D1E3584B900602CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFE1C661E359A5B00602CDF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFE1C671E359A5B00602CDF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				BEFE1C4D1E3584B900602CDF /* PokemonGOClone */,
 				BEFE1C4C1E3584B900602CDF /* Products */,
+				BEFE1C651E359A5B00602CDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +63,6 @@
 				BEFE1C641E3593DF00602CDF /* Modules */,
 				BEFE1C631E3593D700602CDF /* ViewControllers */,
 				BEFE1C4E1E3584B900602CDF /* AppDelegate.swift */,
-				BEFE1C501E3584B900602CDF /* ViewController.swift */,
 				BEFE1C521E3584B900602CDF /* Main.storyboard */,
 				BEFE1C581E3584B900602CDF /* Assets.xcassets */,
 				BEFE1C5A1E3584B900602CDF /* LaunchScreen.storyboard */,
@@ -72,6 +75,7 @@
 		BEFE1C631E3593D700602CDF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BEFE1C501E3584B900602CDF /* ShowMapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -81,6 +85,14 @@
 			children = (
 			);
 			name = Modules;
+			sourceTree = "<group>";
+		};
+		BEFE1C651E359A5B00602CDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE1C661E359A5B00602CDF /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEFE1C511E3584B900602CDF /* ViewController.swift in Sources */,
+				BEFE1C511E3584B900602CDF /* ShowMapViewController.swift in Sources */,
 				BEFE1C4F1E3584B900602CDF /* AppDelegate.swift in Sources */,
 				BEFE1C571E3584B900602CDF /* PokemonGOClone.xcdatamodeld in Sources */,
 			);
